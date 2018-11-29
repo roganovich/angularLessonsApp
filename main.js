@@ -13,8 +13,8 @@ app.controller("mainCtrl", function($scope){
         {key:9,name:'Ограничения в директивах',yoyube:'_UwTqAX3hpA',status:true},
         {key:10,name:'Шаблоны в директивах',yoyube:'_Xm9K4sZMIw',status:true},
         {key:11,name:'Transclude в директивах',yoyube:'MUV6Qm6Mg50',status:true},
-        {key:12,name:'TemplateUrl в директивах',yoyube:'YOiPbufU8HQ',status:false}, 
-         
+        {key:12,name:'TemplateUrl в директивах',yoyube:'YOiPbufU8HQ',status:true}, 
+        {key:13,name:'Кешируем шаблоны',yoyube:'Ij2VWxpnNPo',status:false}, 
     ]
     
     $scope.setClass = function(status){
