@@ -8,13 +8,19 @@
     <script src="main.js" type="text/javascript"></script>
 </head>
 <body>
-    <div class="container">
+    <div class="container" ng-controller='mainCtrl'>
         <h1>Общение контроллера и директивы</h1>
         <div class="row">
             <?php include_once  '../menu.php'; ?>
         </div>
         
-        <div class="jumbotron">
+        <div class="jumbotron" ng-controller='postCtrl'>
+            <p>{{name}}</p>
+            <block-dir></block-dir>
+        </div>
+        
+         <div class="jumbotron" ng-controller='postCtrl2'>
+            <p>{{name}}</p>
             <block-dir></block-dir>
         </div>
         
