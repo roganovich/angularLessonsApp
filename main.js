@@ -14,7 +14,8 @@ app.controller("mainCtrl", function($scope){
         {key:10,name:'Шаблоны в директивах',yoyube:'_Xm9K4sZMIw',status:true},
         {key:11,name:'Transclude в директивах',yoyube:'MUV6Qm6Mg50',status:true},
         {key:12,name:'TemplateUrl в директивах',yoyube:'YOiPbufU8HQ',status:true}, 
-        {key:13,name:'Кешируем шаблоны',yoyube:'Ij2VWxpnNPo',status:false}, 
+        {key:13,name:'Кешируем шаблоны',yoyube:'Ij2VWxpnNPo',status:true}, 
+        {key:14,name:'Общение контроллера и директивы',yoyube:'qioxZNuJDP0',status:false}, 
     ]
     
     $scope.setClass = function(status){
