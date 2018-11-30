@@ -16,7 +16,8 @@ app.controller("mainCtrl", function($scope){
         {key:12,name:'TemplateUrl в директивах',yoyube:'YOiPbufU8HQ',status:true}, 
         {key:13,name:'Кешируем шаблоны',yoyube:'Ij2VWxpnNPo',status:true}, 
         {key:14,name:'Общение контроллера и директивы',yoyube:'qioxZNuJDP0',status:true}, 
-        {key:15,name:'Scope true в директивах',yoyube:'NBnyxA-FnOQ',status:false}, 
+        {key:15,name:'Scope true в директивах',yoyube:'NBnyxA-FnOQ',status:true}, 
+        {key:16,name:'Изолированый скоуп в директивах',yoyube:'RbM4g48jsvE',status:false}, 
     ]
     
     $scope.setClass = function(status){

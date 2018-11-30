@@ -1,6 +1,6 @@
 <html ng-app="myApp">
 <head>
-    <title>Урок по AngularJS #15</title>
+    <title>Урок по AngularJS #16</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <script src="../ext/angular-1.7.5/angular.js" type="text/javascript"></script>
     <link href="../ext/bootstrap-4.0.0/css/bootstrap.min.css" rel="stylesheet">
@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Scope true в директивах</h1>
+        <h1>Изолированый скоуп в директивах</h1>
         <div class="row">
             <?php include_once  '../menu.php'; ?>
         </div>
