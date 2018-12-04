@@ -15,8 +15,14 @@
         </div>
         
         <div class="jumbotron" ng-controller='postCtrl'>
-            {{name}}
-            <block-dir></block-dir>
+            <div>My ctrl name:{{name}}</div>
+            <div>My ctrl color:{{color}}</div>
+            <h1>{{count}}</h1>
+            <div>
+                <button ng-click="mytextfunction()">Жмых1</button>
+            </div>
+            ----------------------------------------
+            <block-dir name="{{name}}" color="color" count="count" myfunc="mytextfunction()"></block-dir>
         </div>
         
        

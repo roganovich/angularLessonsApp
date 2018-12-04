@@ -1,0 +1,36 @@
+#Order deny,allow
+#deny from all
+#Allow from 130.255.142.235
+
+#php_flag display_startup_errors on
+#php_flag display_errors on
+#php_flag html_errors on
+#php_flag  log_errors on
+AddType application/vnd.openxmlformats .docx .pptx .xlsx .xltx . xltm .dotx .potx .ppsx .zip .rar .7z
+php_value max_execution_time 180
+php_value max_input_time 180
+php_value upload_max_filesize 30M
+php_value post_max_size 30M
+php_value error_reporting 1
+php_value session.gc_maxlifetime 3600
+
+php_flag session.use_trans_sid off
+php_flag session.use_only_cookies on
+php_flag session.cache_expire 120
+
+Options +FollowSymLinks
+#IndexIgnore */*
+
+RewriteEngine on
+RewriteRule . index.php
+
+
+
+RewriteCond %{QUERY_STRING} (\<|%3C).*script.*(\>|%3E) [NC,OR]
+RewriteCond %{QUERY_STRING} GLOBALS(=|\[|\%[0-9A-Z]{0,2}) [OR]
+RewriteCond %{QUERY_STRING} _REQUEST(=|\[|\%[0-9A-Z]{0,2})
+RewriteRule ^(.*)$ index.php [F,L]
+
+RewriteRule .* - [E=REMOTE_USER:%{HTTP:Authorization},L]
+
+php_value max_execution_time 800

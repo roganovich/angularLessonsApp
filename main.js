@@ -17,7 +17,9 @@ app.controller("mainCtrl", function($scope){
         {key:13,name:'Кешируем шаблоны',yoyube:'Ij2VWxpnNPo',status:true}, 
         {key:14,name:'Общение контроллера и директивы',yoyube:'qioxZNuJDP0',status:true}, 
         {key:15,name:'Scope true в директивах',yoyube:'NBnyxA-FnOQ',status:true}, 
-        {key:16,name:'Изолированый скоуп в директивах',yoyube:'RbM4g48jsvE',status:false}, 
+        {key:16,name:'Изолированый скоуп в директивах',yoyube:'RbM4g48jsvE',status:true}, 
+        {key:17,name:'Transclude element в директивах',yoyube:'pfK64D_rM8M',status:false}, 
+        
     ]
     
     $scope.setClass = function(status){
