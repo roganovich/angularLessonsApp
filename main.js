@@ -22,8 +22,8 @@ app.controller("mainCtrl", function($scope){
         {key:18,name:'http запросы',yoyube:'ewBjeDged4Q',status:true}, 
         {key:19,name:'Angular-mocks',yoyube:'i-dl9K_payw',status:true}, 
         {key:20,name:'Compile в директивах',yoyube:'dnaKj1zK8Hg',status:true}, 
-        {key:21,name:'Ng-cloak и ng-bind',yoyube:'g-8W5v6Pf9g',status:false}, 
-        
+        {key:21,name:'Ng-cloak и ng-bind',yoyube:'g-8W5v6Pf9g',status:true}, 
+        {key:22,name:'Переходы ngRoute',yoyube:'s-hWaWUp0sw',status:false}, 
         
     ]
     
