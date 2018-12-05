@@ -19,7 +19,9 @@ app.controller("mainCtrl", function($scope){
         {key:15,name:'Scope true в директивах',yoyube:'NBnyxA-FnOQ',status:true}, 
         {key:16,name:'Изолированый скоуп в директивах',yoyube:'RbM4g48jsvE',status:true}, 
         {key:17,name:'Transclude element в директивах',yoyube:'pfK64D_rM8M',status:true}, 
-        {key:18,name:'http запросы',yoyube:'ewBjeDged4Q',status:false}, 
+        {key:18,name:'http запросы',yoyube:'ewBjeDged4Q',status:true}, 
+        {key:19,name:'Angular-mocks',yoyube:'i-dl9K_payw',status:true}, 
+        {key:20,name:'Compile в директивах',yoyube:'dnaKj1zK8Hg',status:false}, 
     ]
     
     $scope.setClass = function(status){

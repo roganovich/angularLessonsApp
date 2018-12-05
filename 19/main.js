@@ -1,4 +1,10 @@
-var app = angular.module('myApp',[]);
+var app = angular.module('myApp',['ngMockE2E']);
+
+app.run(function($httpBackend){
+    var newItems = [{name:'roma1'},{name:'roma2'},];
+    $httpBackend.whenGET('http://angular.loc/json.php').respond(200,newItems);
+})
+
 app.controller('myCtrl', function($scope,$http){
     
     $scope.url ='http://angular.loc/json.php'; 
