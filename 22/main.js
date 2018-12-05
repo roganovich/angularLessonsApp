@@ -1,37 +1,28 @@
-var app = angular.module("myApp",[]);
+var app = angular.module("myApp",['ngRoute']);
 
-app.controller('mainCtrl', function($scope){
-    $scope.getData = function(data){
-        return data;
-    }
-});
-
-app.controller('postCtrl', function($scope){
-    $scope.itemsData = [
+app.controller('dataAttr',function($scope){
+    $scope.items = [
                 {name:'roma'},
                 {name:'olya'},
                 {name:'dastin'},
                 {name:'hofman'},
             ];
-    $scope.name = 'test1';
-})
+});
 
-app.controller('postCtrl2', function($scope){
-    $scope.itemsData = [
-                {name:'roma'},
-            ];
-    $scope.name = 'test2';
-})
 
-app.directive('blockDir', function($templateCache){
+app.config(function($routeProvider){
     
-    return {
-        scope:true, //false - разрешит перезаписывать данные из контроллера, true - не даст перезаписать данные
-        restrict: 'E', //дириктива берется от элеента <block-dir></block-dir>
-        templateUrl : 'tpl/block.html', //ссылка(ид шаблона). 
-        link: function(scope, el, attr){
-            scope.items = scope.getData(scope.itemsData) // дириктива наследует скоп контроллера
-            scope.name = 'test test';
-        }
-    }
+    $routeProvider
+        .when('/',{
+            templateUrl:'tpl/main.html',
+            controller: 'dataAttr',
+        })
+        .when('/second',{
+            templateUrl:'tpl/second.html',
+            controller: 'dataAttr',
+        })
+        .when('/third',{
+            templateUrl:'tpl/third.html',
+            controller: 'dataAttr',
+        })
 });

@@ -17,7 +17,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr ng-repeat="lesson in lessons" style="{{setClass(lesson.status)}}">
+                <tr ng-repeat="lesson in lessons | orderBy:'-key'" style="{{setClass(lesson.status)}}">
                     <td>{{(lesson.key)}}</td>
                     <td> {{lesson.name}}</td>
                     <td> 
