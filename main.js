@@ -25,7 +25,7 @@ app.controller("mainCtrl", function($scope){
         {key:21,name:'Ng-cloak и ng-bind',yoyube:'g-8W5v6Pf9g',status:true}, 
         {key:22,name:'Переходы ngRoute',yoyube:'s-hWaWUp0sw',status:true}, 
         {key:23,name:'Ng route. Пишем мини блог',yoyube:'2WDHugVZ6kU',status:true}, 
-        {key:24,name:'Отслеживание событий роутера ngRoute',yoyube:'SgBflzm69WA',status:false}, 
+        {key:24,name:'Отслеживание событий роутера ngRoute',yoyube:'SgBflzm69WA',status:true}, 
         
         
         
