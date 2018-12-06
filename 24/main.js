@@ -19,6 +19,21 @@ app.config(function($routeProvider){
         })
 });
 
+app.run(function($rootScope){
+    console.log('run');
+    $rootScope.$on('$routeChangeStart',function(event, curent, previos, reject){
+        console.log('to ',curent);
+        console.log('from ',previos);
+    })
+    
+    $rootScope.$on('$routeChangeSuccess',function(event, curent, previos, reject){
+        /*создаем новую переменную*/
+        $rootScope.curentPath = curent.$$route.originalPath
+    })
+});
+
+app.controller('pathCtrl', function(){
+})
 
 app.controller('postsCtrl',function($scope,postsFactory){
     $scope.items = postsFactory.items;

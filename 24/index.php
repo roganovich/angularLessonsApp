@@ -18,7 +18,9 @@
         </div>
         
         <div class="jumbotron">
-            
+            <div ng-controller="pathCtrl">
+                <b>Path:</b>{{curentPath}}
+            </div>
             <nav>
             <ul class="pagination">
               <li class="page-item"> <a class="page-link" href="#!/">Главная</a></li>
